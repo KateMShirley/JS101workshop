@@ -1,2 +1,2 @@
-# JS101workshop
-A 3-hour Javascript course created with reveal.js
+# code101workshop
+A reveal.js presentation for a 1 day intro to HTML/CSS workshop
