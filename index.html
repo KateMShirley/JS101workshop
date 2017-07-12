@@ -24,13 +24,10 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-        <section>
-						<h1>Welcome to<br>Code in 1 Day</h1>
+        <section data-background=url("https://media.giphy.com/media/ChpOyeacGmpQk/giphy.gif ") data-background-repeat="no-repeat" data-background-size=cover data-background-position=center>
+						<h1>Welcome to<br>JavaScript 101</h1>
             <h6>Instructor: Kate Shirley</h6>
 				</section>
-        <section data-background=url("https://media.giphy.com/media/ChpOyeacGmpQk/giphy.gif") data-background-repeat="no-repeat" data-background-size=cover data-background-position=center>
-          <h1>Let's get started!</h1>
-        </section>
         <section>
           <h2>About me</h2>
           <ul>
@@ -45,25 +42,11 @@
         <section>
           <h2>Objectives</h2>
           <ul>
-          <li class="fragment">Learn fundamentional HTML elements and their properties. </li>
-          <li class="fragment">Learn how to style those elements using CSS. </li>
-          <li class="fragment">Create our own static webpages with HTML and CSS.</li>
-          <li class="fragment">We will also talk about deploying static sites, development philosophies to consider and what you should learn next.</li>
+          <li class="fragment">Gain an overview of the JavaScript landscape and its placement in the web ecosystem.</li>
+          <li class="fragment">Practice programmatic thinking by writing pseudo-code.</li>
+          <li class="fragment">Write expressions that both assign and evaluate variables.</li>
+          <li class="fragment">Explain the difference between jQuery and vanilla JS.</li>
         </section>
-        <section>
-          <h2>Agenda</h2>
-          <ul>
-            <li>What is Web Development</li>
-            <li>Front-End Languages</li>
-            <li>Intro to HTML</li>
-            <li>HTML Document</li>
-            <li>Intro to CSS</li>
-            <li>CSS Layouts</li>
-            <li>Lab</li>
-            <li>Deployment</li>
-            <li>What next?</li>
-            </ul>
-          </section>
           <section>
             <h2>Before we get started...</h2>
             <ul class="fragment">
@@ -73,11 +56,10 @@
             </ul>
           </section>
           <section>
-            <h2>Throughout the day...</h2>
+            <h2>Throughout class...</h2>
             <ul class="fragment">
               <li>Ask questions!</li>
               <li>Make mistakes!</li>
-              <li>Also don't be afraid to answer my questions :)</li>
               <li>Google is your best friend</li>
             </ul>
           </section>
@@ -85,69 +67,21 @@
             <h2>A (mini) Icebreaker</h2>
             <h4>Tell us your name and what brought you here today</h4>
           </section>
-          <section>
-            <h2 >Why Learn This Stuff?</h2>
-            <p>This is the language of the internet. While you may not be building entire websites, understanding the basic elements of a webpage will help you format Wordpress posts, advertising code, or be able to tweak existing websites and code. </p>
-          </section>
-          <section data-background=url("https://media.giphy.com/media/Z7IRy689Jjlvi/giphy.gif") data-background-repeat="no-repeat" data-background-size=cover data-background-position=center>
-            <h1>You never know...</h1>
-          </section>
           <section data-background="#581845">
-            <h1>How does the world wide web work? </h1>
+            <h1>Web Development Workflow</h1>
           </section>
           <section>
-            <h3>Clients, servers, responses, requests</h3>
-            <img src="https://ruslanspivak.com/lsbaws-part1/LSBAWS_HTTP_request_response.png">
+            <h2>Web Development Workflow</h2>
+            <img src="images/five.png">
+            <ul style="font-size: 30px;">
+              <li class="fragment">The website goes through several interations between UX and Design, then the dev is delivered design files</li>
+              <li class="fragment">Use HTML, CSS, and JavaScript to bring design to life and code the page to the client specs</li>
+              <li class="fragment">Besides "how it looks", Front-End developers must consider accessibility, performance, cross-browser and cross-device functionality</li>
+            </ul>
           </section>
           <section>
-            <h2>The Internet and the Web</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/VRg4XYwxRCE" frameborder="0" allowfullscreen></iframe>
-          </section>
-          <section>
-            <h2>Browsers</h2>
-            <p>Developers (namely, front-end developers) have to decide which browsers they want their webpages to look the best in.</p>
-            <img src="http://themes.themeton.com/emerald/files/2013/02/cross-browser.jpg" class="fragment">
-          </section>
-          <section>
-            <h2>Browser stats</h2>
-            <img class="fragment" src="https://upload.wikimedia.org/wikipedia/commons/1/17/Web_browser_usage_share%2C_01-2016.svg" style="width:500px;">
-          </section>
-          <section>
-            <h1>Front-End vs.<br>Back-End</h1>
-          </section>
-          <section>
-              <h2>Front-End</h2>
-              <ul>
-                <li class="fragment">Code is rendered by the client (your browser)</li>
-                <li class="fragment">Describes content, presentation, and behavior</li>
-                <li class="fragment">Examples: HTML, CSS, JavaScript</li>
-          </section>
-          <section>
-              <h2>Back-End</h2>
-              <ul>
-                <li class="fragment">Code is interpreted on the server</li>
-                <li class="fragment">Handles, data stores, state, business logic</li>
-                <li class="fragment">Passes content to the front-end before rendering in the browser</li>
-                <li class="fragment">Examples: Ruby, Python, PHP</li>
-          </section>
-          <section>
-            <h2>Front-End and Back-End</h2>
-            <img src="images/one.png" style="width:700px;">
-          </section>
-          <section>
-            <h2>Front-End and Back-End</h2>
-            <img src="images/two.png" style="width:700px;">
-          </section>
-          <section>
-            <h2>Front-End and Back-End</h2>
-            <img src="images/three.png" style="width:700px;">
-          </section>
-          <section>
-            <h2>Front-End and Back-End</h2>
-            <img src="images/four.png" style="width:700px;">
-          </section>
-          <section data-background="#581845">
-            <h1>Front-End Languages</h1>
+            <h2>Front-End vs. Back-End</h2>
+            <h3 class="fragment">(And why JavaScript can be both)</h3>
           </section>
           <section >
   					<h2>Front-End Languages</h2>
@@ -156,7 +90,7 @@
   							<tr>
   								<th>Language</th>
   								<th>Description</th>
-  								<th>Kind of like...</th>
+  								<th>A House analogy...</th>
   							</tr>
   						</thead>
   						<tbody>
@@ -178,50 +112,79 @@
   						</tbody>
   					</table>
   				</section>
-          <section>
+                    <section>
             <h2>Group Practice</h2>
             <h4>Let's pull up Lyft.com</h4>
             <ul>
-              <li class="fragment">What language determines that the "Become a Driver" button is pink?</li>
-              <li class="fragment">When you hover over "Explore" in the menu, what language causes the arrow to flip over and the sub menu to slide out?</li>
-              <li class="fragment">What language determines that there's a "Sign Up to Ride" link?</li>
-            </ul>
-          </section>
-          <section>
-            <h2>Partner Practice</h2>
-            Pull up the New York Times website with a partner, and look at some of the home page elements together. What kind of content do you see? What does the styling look like? What about interactions? Talk about what languages are affecting the site elements. (5 minutes)
-          </section>
-          <section>
-            <h2>Web Development Workflow</h2>
-            <img src="images/five.png">
-            <ul style="font-size: 30px;">
-              <li class="fragment">The website goes through several interations between UX and Design, I am delivered design files</li>
-              <li class="fragment">Use HTML, CSS, and JavaScript to code the page to the client specs</li>
-              <li class="fragment">Besides "how it looks", Front-End developers must consider accessibility, performance, cross-browser and cross-device functionality</li>
+              <li class="fragment">When you hover over explore, or scroll down the page, what interactions do you see?</li>
+              <li class="fragment">With a Partner: Navigate lyft, or another site like AirBnb or Facebook</li>
+              <li class="fragment">Which parts of the site are front-end and which are back-end?</li>
             </ul>
           </section>
           <section data-background="#581845">
-            <h1>HTML: Hypertext markup language</h1>
+            <h1>What is JavaScript?</h1>
           </section>
           <section>
-            <h2>What is HTML?</h2>
+            <h2>What is JavaScript Responsible For?</h2>
             <ul>
-              <li class="fragment">Establishes the structure of a webpage</li>
-              <li class="fragment">Describes the page's content in a way that the browser can format</li>
-              <li class="fragment">HTML is made up of "tags" that surround the pieces of our content to describe what it is</li>
+              <li class="fragment">Content Behavior</li>
+              <li class="fragment">Interactions</li>
+              <li class="fragment">Animations</li>
             </ul>
           </section>
           <section>
-            <h2>Why is HTML important?</h2>
+            <h2>With JS You Can...</h2>
             <ul>
-              <li class="fragment">Literally the building blocks of the webpages</li>
-              <li class="fragment">You manipulate your HTML content by referencing it with CSS and Javascript</li>
-              <li class="fragment">You master HTML by understanding which tags are best for which types of content</li>
+              <li class="fragment">Access/Modify the content</li>
+              <li class="fragment">Create rules</li>
+              <li class="fragment">React to events</li>
+              <li class="fragment">Manipulate the DOM!</li>
             </ul>
           </section>
           <section>
-            <h2>HTML Syntax</h2>
-            <img src="https://www.w3.org/wiki/images/3/39/Elements.png" style="width:700px;">
+            <h2>Review the DOM</h2>
+            <ul>
+            <li class="fragment">The Document Object Model (DOM) is a collection of document nodes that are treated as objects in JavaScript. It is an object model and programming interface for HTML.</li>
+          </ul>
+            <img class="fragment" src="images/dom.jpg">
+          </section>
+          <section>
+            <h2>Let's read some JavaScript</h2>
+            <ul>
+            <li class="fragment">Please navigate to: tinyurl.com/js101traffic </li>
+            <li class="fragment">High-Level: what's happening here?</li>
+            <li class="fragment">With a partner: can you get the slow light to turn yellow?</li>
+            <li class="fragment">With a partner: can you get the go light to work?</li>
+          </ul>
+          </section>
+          <section data-background=url("https://media.giphy.com/media/A06UFEx8jxEwU/giphy.gif") data-background-repeat="no-repeat" data-background-size=cover data-background-position=center>
+            <h1>Intro to Pseudo Code</h1>
+          </section>
+          <section>
+            <h2>Beginner Pseudo Code Example</h2>
+            <img class="fragment" src="images/pc.jpg">
+          </section>
+          <section>
+            <h1>Pseudo Code</h2>
+            <ul>
+              <li class="fragment">Detailed but readable description of what the computer must do</li>
+              <li class="fragment">Written in plain english</li>
+              <li class="fragment">Helps me find "holes" in my logic</li>
+            </section>
+            <section>
+              <h2>Beginner Pseudo Code Example</h2>
+              <img class="fragment" src="images/pc2.png">
+            </section>
+            <section>
+              <h1>Pseudo Code Practice</h2>
+              <p>Write pseudo code for an application that would monitor the room temperature and adjust it so the room remains at a certain temperature.</p>
+              <h6 class="fragment">(Pssst...there are no wrong answers!)</h6>
+              </section>
+          <section data-background="#581845">
+            <h1>Variables and Data Types</h1>
+          </section>
+          <section data-background="#581845">
+            <h1>JavaScript in Action</h1>
           </section>
           <section>
             <h2>Headline Tag</h2>
